@@ -64,7 +64,9 @@ class User
         if (!is_array($row)) {
             return false;
         }
-
+        if (!is_array($row)) {
+            return false;
+        }
         return password_verify($password, $row['password']);
     }
 
